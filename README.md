@@ -33,8 +33,9 @@ Creating undo/redo buffer is also supported. Host program can fetch and store cu
 
 ## Porting engine to other C++ plaforms
 With some code changes, spEngine can be ported to some other C++ platform/compiler, such as Microsoft Visual C++. What needs to be converted:
-1. #include Types.hpp - only because of Byte type definition. You can use typedef unsigned char Byte.
-2. 
+1. #include <Types.hpp> - only because of Byte type definition. You can use typedef unsigned char Byte.
+2. TList object container used to store brushes (brush bucket) can be replaced with std::vector or some other object list.
+3. Pointers to methods, for instnace typedef bool (__closure *TWMouseDown)(TShiftState, int, int); 
 
 
 
