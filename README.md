@@ -39,17 +39,20 @@ With some code changes, spEngine can be ported to some other C++ platform/compil
 4. TThread should be converted to std::thread or similar threading class.
 
 ## Demo with source code
-Demo with source code (Delphi and c++) can be downloaded from: https://sigmapi-design.com/archive/spEngine.zip
+Demo with source code (Delphi and c++) can be downloaded from: https://sigmapi-design.com/archive/spEngine.zip.
 However, this is a very old version of spEnigne (0.6) without IPP support. Anyway, you can get a picture on how to use spEnigne APIs.
 
 ## Prebuild spEnigne.dll (32/64-bit)
 To get newest 32/64-bit spEngine version, the best way is to download Pixopedia XE32/64. After unpacking zip file, search for spEngine.dll and ipp_custom.dll and
 copy them to your development directory.
+
 Pixopedia XE32: https://sigmapi-design.com/archive/pixopediaXE32.zip
+
 Pixopedia XE64: https://sigmapi-design.com/archive/pixopediaXE64.zip
 
 ### License
 © Siniša Petrić, www.sigmapi-design.com
+
 Intel IPP: Copyright 2014-2019 Intel Corporation.
 
 
