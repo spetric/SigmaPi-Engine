@@ -55,6 +55,7 @@ Oh well, if this engine arouse some interest, I can write Wiki pages with APIs d
 
 ### License
 © Siniša Petrić, www.sigmapi-design.com.
+
 Intel IPP is Copyright of Intel Corporation.
 
 
