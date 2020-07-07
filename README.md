@@ -51,7 +51,7 @@ Pixopedia XE32: https://sigmapi-design.com/archive/pixopediaXE32.zip
 Pixopedia XE64: https://sigmapi-design.com/archive/pixopediaXE64.zip
 
 ## APIs reference
-Oh well, if there is any interest I can write Wiki pages with APIs description (only for C++). For Delphi users, this task will be on someone else :) 
+Oh well, if this engine arouse some interest, I can write Wiki pages with APIs description (only for C++). For Delphi users, this task will be on someone else. 
 
 ### License
 © Siniša Petrić, www.sigmapi-design.com.
