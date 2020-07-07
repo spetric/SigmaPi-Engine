@@ -44,11 +44,14 @@ However, this is a very old version of spEnigne (0.6) without IPP support. Anywa
 
 ## Prebuild spEnigne.dll (32/64-bit)
 To get the newest 32/64-bit spEngine version, the best way is to download Pixopedia XE32/64. After unpacking zip file, search for spEngine.dll and ipp_custom.dll and
-copy them to your development directory. From this package, you can also use textures, background tiles, stamp brushes and image nozzles. 
+copy them to your development directory. From this package, you can also use textures, background tiles, stamp brushes and image nozzles for testing. 
 
 Pixopedia XE32: https://sigmapi-design.com/archive/pixopediaXE32.zip
 
 Pixopedia XE64: https://sigmapi-design.com/archive/pixopediaXE64.zip
+
+## APIs reference
+Oh well, if there is any interest I can write Wiki pages with APIs description (only for C++). For Delphi users, this task will be on someone else :) 
 
 ### License
 © Siniša Petrić, www.sigmapi-design.com.
