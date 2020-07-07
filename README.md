@@ -35,7 +35,22 @@ Creating undo/redo buffer is also supported. Host program can fetch and store cu
 With some code changes, spEngine can be ported to some other C++ platform/compiler, such as Microsoft Visual C++. What needs to be converted:
 1. #include <Types.hpp> - only because of Byte type definition. You can use typedef unsigned char Byte.
 2. TList object container used to store brushes (brush bucket) can be replaced with std::vector or some other object list.
-3. Pointers to methods, for instnace typedef bool (__closure *TWMouseDown)(TShiftState, int, int); 
+3. Pointers to methods, for instnace: `typedef bool (__closure *TWMouseDown)(TShiftState, int, int);` (Embarcadero C++), should be converted to, let's say: `bool (spEngineWrapper:: *TWMouseDown)(SomeShiftStateSet, int, int);` (MSVC).    
+4. TThread should be converted to std::thread or similar threading class.
+
+## Demo with source code
+Demo with source code (Delphi and c++) can be downloaded from: https://sigmapi-design.com/archive/spEngine.zip
+However, this is a very old version of spEnigne (0.6) without IPP support. Anyway, you can get a picture on how to use spEnigne APIs.
+
+## Prebuild spEnigne.dll (32/64-bit)
+To get newest 32/64-bit spEngine version, the best way is to download Pixopedia XE32/64. After unpacking zip file, search for spEngine.dll and ipp_custom.dll and
+copy them to your development directory.
+Pixopedia XE32: https://sigmapi-design.com/archive/pixopediaXE32.zip
+Pixopedia XE64: https://sigmapi-design.com/archive/pixopediaXE64.zip
+
+### License
+© Siniša Petrić, www.sigmapi-design.com,
+Intel IPP: Copyright 2014-2019 Intel Corporation.
 
 
 
