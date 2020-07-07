@@ -41,7 +41,7 @@ With some code changes, spEngine can be ported to some other C++ platform/compil
 4. TThread should be converted to std::thread or similar threading class.
 
 ## Demo with source code
-Demo with source code (Delphi and c++) can be downloaded from: https://sigmapi-design.com/archive/spEngine.zip.
+Demo with source code (Delphi and C++) can be downloaded from: https://sigmapi-design.com/archive/spEngine.zip.
 However, this is a very old version of spEnigne (0.6) without IPP support. Anyway, you can get a picture on how to use spEnigne APIs.
 
 ## Prebuild spEnigne.dll (32/64-bit)
