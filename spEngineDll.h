@@ -1,8 +1,8 @@
 #ifndef spEngineDllH
 #define spEngineDllH
 // structures mapping for DLL
-#include "spEngine\spPixelTypes.hpp"
-#include "spEngine\spImage.hpp"
+//#include "spEngine\spPixelTypes.hpp"
+//#include "spEngine\spImage.hpp"
 #include "spEngine\spGlobals.h"
 #ifdef spHostApp
 //---------------------------------------------------------------------------
