@@ -54,8 +54,8 @@ Pixopedia XE64: https://sigmapi-design.com/archive/pixopediaXE64.zip
 Oh well, if this engine arouse some interest, I can write Wiki pages with APIs description (only for C++). For Delphi users, this task will be on someone else. 
 
 ### License
-© Siniša Petrić, www.sigmapi-design.com.
-IPP ((Intel® Integrated Performance Primitives) is Copyright of Intel Corporation.
+ © Siniša Petrić, www.sigmapi-design.com.
+ IPP (Intel® Integrated Performance Primitives) is Copyright of Intel Corporation.
 
 
 
