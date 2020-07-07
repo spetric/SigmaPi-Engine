@@ -49,7 +49,7 @@ Pixopedia XE32: https://sigmapi-design.com/archive/pixopediaXE32.zip
 Pixopedia XE64: https://sigmapi-design.com/archive/pixopediaXE64.zip
 
 ### License
-© Siniša Petrić, www.sigmapi-design.com,
+© Siniša Petrić, www.sigmapi-design.com
 Intel IPP: Copyright 2014-2019 Intel Corporation.
 
 
