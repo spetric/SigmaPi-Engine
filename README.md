@@ -59,10 +59,10 @@ Oh well, if this engine arouse some interest, I can write Wiki pages with APIs d
 Here are few examples of spEngine drawing and image editing possibilites:
 <p align='left'>
     </br>
-    <img src='examples/primitive_brushes.png' width='200'>
+    <img src='examples/primitives_brushes.png' width='200'>
     <img src='examples/stroke_bumping.png' width='200'>
     <img src='examples/facial_warping.png' width='200'>
-    <img src='screens/iterative_voronoi.png' width='200'>
+    <img src='examples/iterative_voronoi.png' width='200'>
 </p>
 
 
