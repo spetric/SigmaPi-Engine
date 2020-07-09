@@ -55,6 +55,17 @@ Pixopedia XE64: https://sigmapi-design.com/archive/pixopediaXE64.zip
 ## APIs reference
 Oh well, if this engine arouse some interest, I can write Wiki pages with APIs description (only for C++). For Delphi users, this task will be on someone else. 
 
+### Examples
+Here are few examples of spEngine drawing and image editing possibilites:
+<p align='left'>
+    </br>
+    <img src='examples/primitive_brushes.png' width='200'>
+    <img src='examples/stroke_bumping.png' width='200'>
+    <img src='examples/facial_warping.png' width='200'>
+    <img src='screens/iterative_voronoi.png' width='200'>
+</p>
+
+
 ### License
  © Siniša Petrić, www.sigmapi-design.com.
  IPP (Intel® Integrated Performance Primitives) is Copyright of Intel Corporation.
