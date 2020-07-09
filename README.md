@@ -2,7 +2,9 @@
 ## Drawing and Image Processing Engine   
 SigmaPi Engine or shortly spEngine is library (DLL) mainly intended to be used with Embarcadero C++/Delphi on Windows platform.
 This library is main drawing and image processing engine of Pixopedia XE painter and image editor:
-https://www.sigmapi-design.com/pixopedia/
+https://www.sigmapi-design.com/pixopedia/.
+
+Library is written in Embarcadero C++ 10.1. Berlin, except one assembly function (fast_ftol) for fast double to int conversion.
 
 Besides native code, engine also uses a subset of Intel® IPP (Intel® Integrated Performance Primitives), packed in custom DLL. Using IPP is optional and if engine can not find ipp_custom.dll all APIs involving IPP processing routines will return false, indicating IPP is not installed. With little modification you can use a complete set of IPP DLLs instead of single custom DLL. Tools for creating cusom IPP DLL can be found in ipp_custom_def directory. 
 
@@ -39,7 +41,7 @@ With some code changes, spEngine can be ported to some other C++ platform/compil
 4. TThread should be converted to std::thread or similar threading class.
 
 ## Demo with source code
-Demo with source code (Delphi and c++) can be downloaded from: https://sigmapi-design.com/archive/spEngine.zip.
+Demo with source code (Delphi and C++) can be downloaded from: https://sigmapi-design.com/archive/spEngine.zip.
 However, this is a very old version of spEnigne (0.6) without IPP support. Anyway, you can get a picture on how to use spEnigne APIs.
 
 ## Prebuild spEnigne.dll (32/64-bit)
@@ -54,8 +56,8 @@ Pixopedia XE64: https://sigmapi-design.com/archive/pixopediaXE64.zip
 Oh well, if this engine arouse some interest, I can write Wiki pages with APIs description (only for C++). For Delphi users, this task will be on someone else. 
 
 ### License
-© Siniša Petrić, www.sigmapi-design.com.
-Intel IPP is Copyright of Intel Corporation.
+ © Siniša Petrić, www.sigmapi-design.com.
+ IPP (Intel® Integrated Performance Primitives) is Copyright of Intel Corporation.
 
 
 
