@@ -37,7 +37,7 @@ Creating undo/redo buffer is also supported. Host program can fetch and store cu
 With some code changes, spEngine can be ported to some other C++ platform/compiler, such as Microsoft Visual C++. What needs to be converted:
 1. #include <Types.hpp> - only because of Byte type definition. You can use typedef unsigned char Byte.
 2. TList object container used to store brushes (brush bucket) can be replaced with std::vector or some other object list.
-3. Pointers to methods, for instance: `typedef bool (__closure *TWMouseDown)(TShiftState, int, int);` (Embarcadero C++), should be converted to, let's say: `bool (spEngineWrapper:: *TWMouseDown)(TShiftState, int, int);` (MSVC). Note: TShiftState is a set of mouse states. Currently, spEngine does not use it, so you can pass an empty set of type TShiftState.    
+3. Pointers to methods, for instance: `typedef bool (__closure *TWMouseDown)(TShiftState, int, int);` (Embarcadero C++), should be converted to, let's say: `bool (spEngineWrapper:: *TWMouseDown)(TShiftState, int, int);` (MSVC). Note: TShiftState is a set of mouse states. Currently, spEngine does not use it, so you can pass an empty set of type TShiftState which must be previously defined.    
 4. TThread should be converted to std::thread or similar threading class.
 
 ## Demo with source code
