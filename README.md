@@ -8,10 +8,10 @@ Library is written in Embarcadero C++ 10.1. Berlin, except one assembly function
 
 Besides native code, engine also uses a subset of Intel® IPP (Intel® Integrated Performance Primitives), packed in custom DLL. Using IPP is optional and if engine can not find ipp_custom.dll all APIs involving IPP processing routines will return false, indicating IPP is not installed. With little modification you can use a complete set of IPP DLLs instead of single custom DLL. Tools for creating cusom IPP DLL can be found in ipp_custom_def directory. 
 
-To be able to call spEngine APIs from some host drawing program, spHostApp variable must be defined: #define spHostApp.
+To be able to call spEngine APIs from some host drawing program, you must either define spHostApp variable in your host prorgram (`#define spHostApp`) or make a copy of spEngineDLL.h and delete/comment `#define spHostApp` and it's associated `#endif`. In later case, you don't have to define spHostApp.  
 
 ## Delphi Developers
-To be able to use spEnigne.DLL from Delphi, API prototypes in spEngineDLL.h must be converted to pas file, as well as structure and typedefs in spGlobals.h.
+To be able to use spEnigne.DLL from Delphi, API prototypes in spEngineDLL.h must be converted to pas file, as well as structure and typedefs in spGlobals.h. Before converting spEngineDLL.h you can comment or delete `#define spHostApp` and it's associated `#endif`.  
 
 ## Supported image formats
 Similar to LIPS engine (https://github.com/spetric/Lips), spEngine supports RGB24 bitmap/image container. Only width, height, scanline alignement and pointer to image buffer are passed to spEngine. Also, spEngine supports RGB24 images with separated alpha channel. Support for RGBA32 can be added as well, but currently it's not supported.  
