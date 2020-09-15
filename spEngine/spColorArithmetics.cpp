@@ -279,12 +279,11 @@ singleOut(sc, false);
 //---------------------------------------------------------------------------
 void spColorArithmetics::EraseAlphaChannel(Tsc *sc)
 {
-/*TODO:
-spSurfaceContainer *Surf = sc->SurfaceContainer;
-pixelArithmetic((LPBYTE)&sc->ImageContainer->ImageEdit->SpSurface->DirectBGR[sc->i][sc->j], sc->Brush->ColorParams->WorkPrimaryBGR);
-if (sc->ImageContainer->ImageOrig->SpImage->alpha_map && sc->Brush->ColorParams->WorkPrimaryBGR[7])
-   pxpf_EraseAlpha(PixData);
-*/
+ArithFunc(sc->ArithSurf->Pix[sc->i][sc->j],
+				sc->Brush->ColorParams->PrimaryColor,
+				sc->Brush->ColorParams->WorkPrimary, &ArithData);
+if (ArithData.goOn)
+   spPixelMixer::EraseAlpha(sc);
 }
 //---------------------------------------------------------------------------
 void spColorArithmetics::Filter33(Tsc *sc)

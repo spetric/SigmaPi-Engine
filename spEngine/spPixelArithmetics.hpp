@@ -42,9 +42,12 @@ class spPixelArithmetics
 	   T testVal;
 	   T repVal;
 	   int tolerance;
-	   bool matchAll;
+       // mode - additional param (in case of earese: 0-erase all, 1-erase match, 2-erase all but match)
+	   int mode;
 	   // apply on desired channel - external filter (ipp)
 	   bool chanOn[3];
+	   // return data
+       bool goOn;
 	   };
 	template <class T>
 	struct spsColor
@@ -791,19 +794,23 @@ class spPixelArithmetics
 	{
 	//spsColor<T> *color = static_cast <spsColor<T>*>(data);
 	int  pEdit, pTest;
-	if (arith->matchAll)
+	if (arith->mode == 0)
 	   {
 	   outVal = arith->repVal;
+       arith->goOn = true;
 	   return;
 	   }
-	bool match = true;
+	arith->goOn = true;
 	for (size_t k = 0; k < sizeof(T); k++)
 		{
 		pEdit = (int)iVal1.ch[k];
 		pTest = (int)arith->testVal.ch[k];
-		match = match && (pEdit <= (pTest + arith->tolerance) && pEdit >= (pTest - arith->tolerance));
+		if (arith->mode == 1)
+			arith->goOn = arith->goOn && (pEdit <= (pTest + arith->tolerance) && pEdit >= (pTest - arith->tolerance));
+		else
+			arith->goOn = arith->goOn && (pEdit > (pTest + arith->tolerance) || pEdit < (pTest - arith->tolerance));
 		}
-	if (match)
+	if (arith->goOn)
 	   outVal = arith->repVal;
 	else
 	   outVal = iVal1;

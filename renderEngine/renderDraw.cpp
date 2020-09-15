@@ -54,9 +54,12 @@ switch (DrawParams->MainMode)
    case spe_ARITH_ERASE:
 		spColorArithmetics::ArithData.testVal = ptRGB(DrawParams->EraseMatchColor);
 		spColorArithmetics::ArithData.repVal  = ptRGB(DrawParams->EraseReplaceColor);
-		spColorArithmetics::ArithData.matchAll   = DrawParams->EraseMatchAll;
+		spColorArithmetics::ArithData.mode   = DrawParams->EraseMatchMode;
 		spColorArithmetics::ArithData.tolerance  = DrawParams->EraseMatchColorTolerance;
-		_colorArithmetic = &spColorArithmetics::PrimaryColor;
+		if (_SC->AlphaOrig)
+		   _colorArithmetic = &spColorArithmetics::EraseAlphaChannel;
+		else
+		   _colorArithmetic = &spColorArithmetics::PrimaryColor;
 		spColorArithmetics::ArithFunc = &spPixelArithmetics::Pixel_Erase_MatchColor;
 		break;
    case  spe_ARITH_XOR:

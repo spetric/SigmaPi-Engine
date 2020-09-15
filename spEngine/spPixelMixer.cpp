@@ -271,7 +271,7 @@ void spPixelMixer::EraseAlpha(Tsc *sc)
 {
 if (sc->MaskLeft->Pix[sc->i][sc->j]	>= sc->MaskRight->Pix[sc->i][sc->j])
    return; // pixel skipped
-if (sc->Edit->Byte0[sc->i][sc->j] == 0x00) // pobrisano
+if (sc->AlphaEdit->Byte0[sc->i][sc->j] == 0x00) // pobrisano
    return;
 int k, new_alpha, mask_byte;
 mask_byte = (int)sc->MaskRight->Byte0[sc->i][sc->j];

@@ -154,7 +154,7 @@ struct Tspe_DrawParams
    int ScaleBottomRGB[3];
    bool UpdateAlpha;
    int  StrokesNumber;      // for undo buffer
-   bool EraseMatchAll;
+   int  EraseMatchMode;
    int EraseMatchColorTolerance;
    unsigned int	EraseMatchColor;
    unsigned int EraseReplaceColor;

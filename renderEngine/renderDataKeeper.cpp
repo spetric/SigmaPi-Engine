@@ -70,7 +70,7 @@ for (i = 0; i < 3; i++)
 	}
 DrawParams->UpdateAlpha = true;
 DrawParams->StrokesNumber = 1;
-DrawParams->EraseMatchAll = true;
+DrawParams->EraseMatchMode = 0;
 DrawParams->EraseMatchColorTolerance = 0;
 DrawParams->EraseMatchColor = 0x00000000;
 DrawParams->EraseReplaceColor = 0x00ffffff;
